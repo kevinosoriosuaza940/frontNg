@@ -1,0 +1,19 @@
+.container{
+    background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1)  4%, rgba(9,9,121,1)100%); height: 100vh;
+      
+   height: 90vh;
+    padding: 20%;
+    max-width: 700vh;
+  
+  
+  
+  }
+  .row{
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+    
+  }
+  

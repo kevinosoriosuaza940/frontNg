@@ -1,0 +1,20 @@
+
+h1{
+    
+    margin-right: 50%;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+a{
+    object-fit: cover;
+    margin-right: 50px;
+}                            
+img{
+    height: 86px;
+    width: 86px;
+    border-radius: 100%;  
+  
+}
+img:hover{
+    box-shadow: white 2px 2px 20px 5px;
+}

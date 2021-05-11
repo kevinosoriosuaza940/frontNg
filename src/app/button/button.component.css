@@ -1,0 +1,8 @@
+Button{
+    font-weight:bolder;
+    height: 50px;
+    width: 150px;
+}
+Button:hover{
+    box-shadow: white 2px 2px 20px 5px;
+}
