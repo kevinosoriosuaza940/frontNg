@@ -8,15 +8,13 @@ import { Router } from '@angular/router';
 })
 export class ButtonComponent implements OnInit {
   
-  title: string = "BOTON";
+  title: string = "Home";
 
-  constructor(public router: Router) {}
+  constructor(private router: Router) {}
   
   onClick(pRuta: string){
-    this.router.navigate([pRuta])
-    this.title=pRuta;
   }
-  
+
   ngOnInit(): void {
   }
 
