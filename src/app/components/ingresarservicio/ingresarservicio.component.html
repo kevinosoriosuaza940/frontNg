@@ -1,1 +1,26 @@
-<p>ingresarservicio works!</p>
+<section>
+    <div>
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <input type="text" placeholder="Id Tecnico" class="form-control " formControlName="idtecnico">
+            </div>
+            <div class="form-group">
+                <select class="form-select" >
+                    <option selected>Tipo de servicio</option>
+                    <option value="Emergencia">Emergencia</option>
+                    <option value="Normal">Normal</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <input type="date" placeholder="Fecha inicio" class="form-control " formControlName="idtecnico">
+            </div>
+            <div class="form-group">
+                <input type="date" placeholder="fecha fin" class="form-control " formControlName="idtecnico">
+            </div>
+            <app-button type="submit" value="Enviar" class="btn" [disable]="!formulario.valid"></app-button>
+        </form>
+        <div>
+            <p>Valido: {{formulario.valid}}</p>
+        </div>
+    </div>
+</section>

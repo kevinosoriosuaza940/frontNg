@@ -1,10 +1,12 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <app-button  [routerLink]="['/ingresarservicio']"></app-button>
+            <app-button (click)= "onClick('ingresarservicio')" ></app-button>
+    
         </div>
         <div class="col">
-            <app-button [routerLink]="['/consultarhoras']"></app-button>
+            <app-button (click)= "onClick('consultarhoras')" ></app-button>
+        
         </div>
     </div>
 </div>

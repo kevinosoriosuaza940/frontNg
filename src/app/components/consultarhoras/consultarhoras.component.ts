@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-consultarhoras',
@@ -6,10 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consultarhoras.component.css']
 })
 export class ConsultarhorasComponent implements OnInit {
+ 
+  formulario: FormGroup;
 
-  constructor() { }
+ 
 
+  constructor() {
+
+    this.formulario = new FormGroup({
+
+      idtecnico: new FormControl(''),
+      numerosemana: new FormControl('')
+      
+    }
+
+    )
+  }
   ngOnInit(): void {
   }
-
+  onSubmit(){
+    console.log(this.formulario.value);
+  }
 }

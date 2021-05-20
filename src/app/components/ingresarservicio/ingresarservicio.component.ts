@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-ingresarservicio',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IngresarservicioComponent implements OnInit {
 
-  constructor() { }
+  formulario: FormGroup;
+
+  constructor() {
+    this.formulario = new FormGroup({
+
+      idtecnico: new FormControl(),
+      tiposervicio: new FormControl(),
+      fechainicio: new FormControl(),
+      fechafin: new FormControl(),
+      
+    }
+
+    )
+  }
 
   ngOnInit(): void {
   }
-
+  onSubmit(){
+    console.log(this.formulario.value);
+  }
 }

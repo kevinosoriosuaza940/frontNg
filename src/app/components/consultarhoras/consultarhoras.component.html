@@ -1,1 +1,72 @@
-<p>consultarhoras works!</p>
+<section>
+    <aside>
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label>ID Tecnico</label>
+                <input type="text" placeholder="Id Tecnico" class="form-control" formControlName="idtecnico">
+            </div>
+            <div class="form-group">
+                <label>Numero Semana</label>
+                <input type="number" placeholder="Numero Semana" class="form-control" formControlName="numerosemana">
+            </div>
+            <app-button type="submit" value="Enviar" class="btn"></app-button>
+        </form>
+    </aside>
+   
+
+    <table>
+        <thead>
+            <th>#</th>
+            <th>Tipo Hora</th>
+            <th>Cantidad Horas</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>ID Tecnico</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Numero Semana</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Horas normales</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Horas nocturnas</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Horas normales extras</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Horas dominicales</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Horas nocturnas extras</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>Horas dominicales extras</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td>Total Horas</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+  
+</section>
