@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-ingresarservicio',
@@ -13,10 +13,19 @@ export class IngresarservicioComponent implements OnInit {
   constructor() {
     this.formulario = new FormGroup({
 
-      idtecnico: new FormControl(),
-      tiposervicio: new FormControl(),
-      fechainicio: new FormControl(),
-      fechafin: new FormControl(),
+      idtecnico: new FormControl('', [
+        Validators.required
+      ]),
+      tiposervicio: new FormControl('', [
+        Validators.required
+      ]),
+      fechainicio: new FormControl('', [
+        Validators.required
+      ]),
+      fechafin: new FormControl('', [
+        Validators.required
+      
+      ]),
       
     }
 
@@ -28,4 +37,5 @@ export class IngresarservicioComponent implements OnInit {
   onSubmit(){
     console.log(this.formulario.value);
   }
+ 
 }

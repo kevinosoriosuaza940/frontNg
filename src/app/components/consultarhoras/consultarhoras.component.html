@@ -9,7 +9,8 @@
                 <label>Numero Semana</label>
                 <input type="number" placeholder="Numero Semana" class="form-control" formControlName="numerosemana">
             </div>
-            <app-button type="submit" value="Enviar" class="btn"></app-button>
+            <button type="submit" value="Entrar" class="btn btn-secondary" [disabled]="!formulario.valid">Consultar</button>
+            <!-- <app-button type="submit" value="Enviar" class="btn"></app-button> -->
         </form>
     </aside>
    
@@ -70,3 +71,7 @@
     </table>
   
 </section>
+{{ formulario.value | json }}
+<div>
+    <p>Valido: {{ formulario.valid }}</p>
+</div>

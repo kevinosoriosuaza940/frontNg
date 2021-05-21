@@ -1,14 +1,10 @@
 
 h1{
-    
-    margin-right: 40%;
+    margin-right: 80%;
     text-transform: uppercase;
     font-weight: bolder;
 }
-a{
-    object-fit: cover;
-    margin-right: 50px;
-}                            
+                        
 img{
     height: 86px;
     width: 86px;
