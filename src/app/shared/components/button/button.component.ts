@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,11 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./button.component.css'],
 })
 export class ButtonComponent implements OnInit {
-  title: string;
+  @Input() title: string ="";
+  @Input() estilo:boolean=true;
 
-  constructor(private router: Router) {
-    this.title = 'Button';
-  }
+  constructor(private router: Router) {}
 
   onClick(pRuta: string) {}
 
